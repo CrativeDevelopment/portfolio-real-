@@ -35,8 +35,8 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import { Reveal } from "@plasmicpkgs/react-awesome-reveal"; // plasmic-import: R6s1FdhksG/codeComponent
-import CopyableLink from "../../CopyableLink"; // plasmic-import: CmYzwBVy-6EQR/component
 import Tilt from "@plasmicpkgs/react-parallax-tilt"; // plasmic-import: PfY466VIuq/codeComponent
+import CopyableLink from "../../CopyableLink"; // plasmic-import: CmYzwBVy-6EQR/component
 
 import { useScreenVariants as useScreenVariantsieEJs1Aww8Cnm } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: ieEJs1AWW8CNM/globalVariant
 
@@ -60,7 +60,6 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
   copyableLink?: p.Flex<typeof CopyableLink>;
-  tilt?: p.Flex<typeof Tilt>;
   img?: p.Flex<typeof p.PlasmicImg>;
 };
 
@@ -176,15 +175,19 @@ function PlasmicHomepage__RenderFunc(props: {
                     className={classNames("__wab_instance", sty.reveal__isrc)}
                     triggerOnce={true}
                   >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__jitT7
-                      )}
+                    <Tilt
+                      className={classNames("__wab_instance", sty.tilt__vbAlj)}
                     >
-                      {"I design prototypes meant to impress."}
-                    </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__jitT7
+                        )}
+                      >
+                        {"I design prototypes meant to impress."}
+                      </div>
+                    </Tilt>
                   </Reveal>
 
                   <Reveal
@@ -192,15 +195,19 @@ function PlasmicHomepage__RenderFunc(props: {
                     damping={1 as const}
                     triggerOnce={true}
                   >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__gzFsh
-                      )}
+                    <Tilt
+                      className={classNames("__wab_instance", sty.tilt__wiNzN)}
                     >
-                      {"I design the breath taker"}
-                    </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__gzFsh
+                        )}
+                      >
+                        {"I design the breath taker"}
+                      </div>
+                    </Tilt>
                   </Reveal>
 
                   <Reveal
@@ -208,15 +215,19 @@ function PlasmicHomepage__RenderFunc(props: {
                     damping={1.5 as const}
                     triggerOnce={true}
                   >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__bct7
-                      )}
+                    <Tilt
+                      className={classNames("__wab_instance", sty.tilt___9A1AK)}
                     >
-                      {"I design the perfect."}
-                    </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__bct7
+                        )}
+                      >
+                        {"I design the perfect."}
+                      </div>
+                    </Tilt>
                   </Reveal>
                 </div>
               </div>
@@ -283,11 +294,7 @@ function PlasmicHomepage__RenderFunc(props: {
             <div className={classNames(projectcss.all, sty.freeBox__qEbx2)} />
           </div>
 
-          <Tilt
-            data-plasmic-name={"tilt"}
-            data-plasmic-override={overrides.tilt}
-            className={classNames("__wab_instance", sty.tilt)}
-          >
+          <Tilt className={classNames("__wab_instance", sty.tilt__l44D)}>
             <p.PlasmicImg
               data-plasmic-name={"img"}
               data-plasmic-override={overrides.img}
@@ -325,9 +332,8 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "copyableLink", "tilt", "img"],
+  root: ["root", "copyableLink", "img"],
   copyableLink: ["copyableLink"],
-  tilt: ["tilt", "img"],
   img: ["img"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -336,7 +342,6 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   copyableLink: typeof CopyableLink;
-  tilt: typeof Tilt;
   img: typeof p.PlasmicImg;
 };
 
@@ -402,7 +407,6 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     copyableLink: makeNodeComponent("copyableLink"),
-    tilt: makeNodeComponent("tilt"),
     img: makeNodeComponent("img"),
 
     // Metadata about props expected for PlasmicHomepage

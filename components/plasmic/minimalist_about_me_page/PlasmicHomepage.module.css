@@ -137,6 +137,11 @@
   object-fit: cover;
   position: relative;
 }
+.tilt__vbAlj:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
 .text__jitT7 {
   position: relative;
   font-size: 22px;
@@ -148,6 +153,11 @@
   }
 }
 .reveal__h0EN5:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+.tilt__wiNzN:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;
   position: relative;
@@ -165,6 +175,11 @@
   }
 }
 .reveal__osO05:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+.tilt___9A1AK:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;
   position: relative;
@@ -352,7 +367,7 @@
   background: rgba(68, 192, 255, 0.2);
   flex-shrink: 0;
 }
-.tilt:global(.__wab_instance) {
+.tilt__l44D:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;
   position: relative;
