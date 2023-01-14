@@ -36,6 +36,7 @@ import {
 } from "@plasmicapp/react-web";
 import { Reveal } from "@plasmicpkgs/react-awesome-reveal"; // plasmic-import: R6s1FdhksG/codeComponent
 import CopyableLink from "../../CopyableLink"; // plasmic-import: CmYzwBVy-6EQR/component
+import Tilt from "@plasmicpkgs/react-parallax-tilt"; // plasmic-import: PfY466VIuq/codeComponent
 
 import { useScreenVariants as useScreenVariantsieEJs1Aww8Cnm } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: ieEJs1AWW8CNM/globalVariant
 
@@ -59,6 +60,7 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
   copyableLink?: p.Flex<typeof CopyableLink>;
+  tilt?: p.Flex<typeof Tilt>;
   img?: p.Flex<typeof p.PlasmicImg>;
 };
 
@@ -281,25 +283,31 @@ function PlasmicHomepage__RenderFunc(props: {
             <div className={classNames(projectcss.all, sty.freeBox__qEbx2)} />
           </div>
 
-          <p.PlasmicImg
-            data-plasmic-name={"img"}
-            data-plasmic-override={overrides.img}
-            alt={""}
-            className={classNames(sty.img)}
-            displayHeight={"65px" as const}
-            displayMaxHeight={"none" as const}
-            displayMaxWidth={"100%" as const}
-            displayMinHeight={"0" as const}
-            displayMinWidth={"0" as const}
-            displayWidth={"100%" as const}
-            loading={"lazy" as const}
-            src={{
-              src: "/plasmic/minimalist_about_me_page/images/_2024208Jpg.jpeg",
-              fullWidth: 2560,
-              fullHeight: 1600,
-              aspectRatio: undefined
-            }}
-          />
+          <Tilt
+            data-plasmic-name={"tilt"}
+            data-plasmic-override={overrides.tilt}
+            className={classNames("__wab_instance", sty.tilt)}
+          >
+            <p.PlasmicImg
+              data-plasmic-name={"img"}
+              data-plasmic-override={overrides.img}
+              alt={""}
+              className={classNames(sty.img)}
+              displayHeight={"65px" as const}
+              displayMaxHeight={"none" as const}
+              displayMaxWidth={"100%" as const}
+              displayMinHeight={"0" as const}
+              displayMinWidth={"0" as const}
+              displayWidth={"100%" as const}
+              loading={"lazy" as const}
+              src={{
+                src: "/plasmic/minimalist_about_me_page/images/_2024208Jpg.jpeg",
+                fullWidth: 2560,
+                fullHeight: 1600,
+                aspectRatio: undefined
+              }}
+            />
+          </Tilt>
 
           <div
             className={classNames(
@@ -317,8 +325,9 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "copyableLink", "img"],
+  root: ["root", "copyableLink", "tilt", "img"],
   copyableLink: ["copyableLink"],
+  tilt: ["tilt", "img"],
   img: ["img"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -327,6 +336,7 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   copyableLink: typeof CopyableLink;
+  tilt: typeof Tilt;
   img: typeof p.PlasmicImg;
 };
 
@@ -392,6 +402,7 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     copyableLink: makeNodeComponent("copyableLink"),
+    tilt: makeNodeComponent("tilt"),
     img: makeNodeComponent("img"),
 
     // Metadata about props expected for PlasmicHomepage
