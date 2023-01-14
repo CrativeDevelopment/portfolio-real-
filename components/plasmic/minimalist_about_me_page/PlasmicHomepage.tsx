@@ -183,7 +183,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         sty.text__jitT7
                       )}
                     >
-                      {"I design prototypes meant to be built."}
+                      {"I design prototypes meant to impress."}
                     </div>
                   </Reveal>
 
@@ -412,7 +412,7 @@ export const PlasmicHomepage = Object.assign(
     // Page metadata
     pageMetadata: {
       title: "Lucas Ly - ",
-      description: "I design prototypes meant to be built.",
+      description: "I design prototypes meant to impress.",
       ogImageSrc: "",
       canonical: ""
     }
