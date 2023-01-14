@@ -1,0 +1,299 @@
+{
+  "platform": "nextjs",
+  "code": {
+    "lang": "ts",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+  },
+  "images": {
+    "scheme": "public-files",
+    "publicDir": "../public",
+    "publicUrlPrefix": "/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "caTPwKxj5ZrD9LQ7DMdK4Z",
+      "projectApiToken": "vXGGQpdi9fhcncabBdg8DcMRUbkz0iRW6HS1jzQufQR6QH0MasPwr9SX7ap4SsK3xXwwXmzZtglWGe0Rm2nw",
+      "projectName": "plasmic-basic-components",
+      "version": "3.11.0",
+      "cssFilePath": "plasmic/plasmic_basic_components/plasmic_plasmic_basic_components.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "CMDBvOhaI4s",
+          "name": "Iframe",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "RhitNJW5Zu-",
+          "name": "Video",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "PKldDYkH42",
+          "name": "Embed",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "D4RbnlpRXg3",
+          "name": "DataProvider",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        }
+      ]
+    },
+    {
+      "projectId": "58GpZjZCWTaJ8AUhpCwt2K",
+      "projectApiToken": "DIkcfhBwjMCJSjcxfBkMuy4NImyytq5EWylxVcpS9t9EpdhnPQuBgBGxmk00AB1itMFa1KXTxOKnrjN2PN9nlA",
+      "projectName": "react-awesome-reveal",
+      "version": "3.8.0",
+      "cssFilePath": "plasmic/react_awesome_reveal/plasmic_react_awesome_reveal.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "R6s1FdhksG",
+          "name": "Reveal",
+          "componentImportPath": "@plasmicpkgs/react-awesome-reveal"
+        }
+      ]
+    },
+    {
+      "projectId": "84wxoth5npGrp6RRXPL88z",
+      "projectApiToken": "hOzXksPB8gkTrKnfJeV9VDS8m8dnIXQn1xxDQZ5MHxv9orQY6JNgwmk6aDMZPLkocV2KtD9gNJXv5JwIbbzIQ",
+      "projectName": "react-scroll-parallax-global",
+      "version": "4.8.0",
+      "cssFilePath": "plasmic/react_scroll_parallax_global/plasmic_react_scroll_parallax_global.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "plasmic/react_scroll_parallax_global/PlasmicGlobalContextsProvider.tsx",
+      "codeComponents": [
+        {
+          "id": "bozP4lLlAZ",
+          "name": "ParallaxWrapper",
+          "componentImportPath": "@plasmicpkgs/react-scroll-parallax"
+        },
+        {
+          "id": "L6MfauX2Cw",
+          "name": "ParallaxProviderWrapper",
+          "componentImportPath": "@plasmicpkgs/react-scroll-parallax"
+        }
+      ]
+    },
+    {
+      "projectId": "gLnoj82AzKVVT7qXiqAbHD",
+      "projectApiToken": "30Q6Vm3wLmLUouXUphjiHN1eerUuQNmjcIHNiu6sFoeK8pIoi3LRDH2gMh9txlrZGCbOh9s0VaoZHqtvs3hQ",
+      "projectName": "plasmic-tabs",
+      "version": "1.2.0",
+      "cssFilePath": "plasmic/plasmic_tabs/plasmic_plasmic_tabs.module.css",
+      "components": [
+        {
+          "id": "lBHNzts6tFyj",
+          "name": "Button",
+          "type": "managed",
+          "projectId": "gLnoj82AzKVVT7qXiqAbHD",
+          "renderModuleFilePath": "plasmic/plasmic_tabs/PlasmicButton.tsx",
+          "importSpec": {
+            "modulePath": "Button.tsx"
+          },
+          "cssFilePath": "plasmic/plasmic_tabs/PlasmicButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
+        }
+      ],
+      "icons": [
+        {
+          "id": "zq2s7N0xWucT",
+          "name": "ChecksvgIcon",
+          "moduleFilePath": "plasmic/plasmic_tabs/icons/PlasmicIcon__Checksvg.tsx"
+        },
+        {
+          "id": "8K40faRNhuCj",
+          "name": "IconIcon",
+          "moduleFilePath": "plasmic/plasmic_tabs/icons/PlasmicIcon__Icon.tsx"
+        }
+      ],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "qT-BBamUwNg",
+          "name": "TabsContainer",
+          "componentImportPath": "@plasmicpkgs/plasmic-tabs"
+        },
+        {
+          "id": "7uvxnLIBlo3",
+          "name": "TabUnderline",
+          "componentImportPath": "@plasmicpkgs/plasmic-tabs"
+        },
+        {
+          "id": "5jaBI7A4_ak",
+          "name": "TabButton",
+          "componentImportPath": "@plasmicpkgs/plasmic-tabs"
+        },
+        {
+          "id": "KyRr6GQ_tPI",
+          "name": "TabContent",
+          "componentImportPath": "@plasmicpkgs/plasmic-tabs"
+        }
+      ]
+    },
+    {
+      "projectId": "itBdcjth19Wasd6ngAYxWR",
+      "projectApiToken": "pJhvXesaoH425YiAJjn9GHDxeWDga53GXsyZpNGKlO9WKig0ai1puOivs1GJSpPWSXxCDR78cMtivrw",
+      "projectName": "react-twitter-widgets",
+      "version": "1.8.0",
+      "cssFilePath": "plasmic/react_twitter_widgets/plasmic_react_twitter_widgets.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "RZqWqT2DfR",
+          "name": "TweetWrapper",
+          "componentImportPath": "@plasmicpkgs/react-twitter-widgets"
+        },
+        {
+          "id": "x2j0abJR_t",
+          "name": "TimelineWrapper",
+          "componentImportPath": "@plasmicpkgs/react-twitter-widgets"
+        },
+        {
+          "id": "zqQBieQcfl",
+          "name": "FollowWrapper",
+          "componentImportPath": "@plasmicpkgs/react-twitter-widgets"
+        }
+      ]
+    },
+    {
+      "projectId": "oJPbG6dAnddYXsmAzBHhSC",
+      "projectApiToken": "rVuEKWDBooW2BGAvwCBKN8EUEWex9R7UL6F6wjXVEVZNzv560xM94bTZFKU0gelP0W1ExrOfz5O32TakxWaSA",
+      "projectName": "Minimalist about-me page",
+      "version": "latest",
+      "cssFilePath": "plasmic/minimalist_about_me_page/plasmic_minimalist_about_me_page.module.css",
+      "components": [
+        {
+          "id": "K9b1BPlQOtEee",
+          "name": "Homepage",
+          "type": "managed",
+          "projectId": "oJPbG6dAnddYXsmAzBHhSC",
+          "renderModuleFilePath": "plasmic/minimalist_about_me_page/PlasmicHomepage.tsx",
+          "importSpec": {
+            "modulePath": "../pages/index.tsx"
+          },
+          "cssFilePath": "plasmic/minimalist_about_me_page/PlasmicHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "CmYzwBVy-6EQR",
+          "name": "CopyableLink",
+          "type": "managed",
+          "projectId": "oJPbG6dAnddYXsmAzBHhSC",
+          "renderModuleFilePath": "plasmic/minimalist_about_me_page/PlasmicCopyableLink.tsx",
+          "importSpec": {
+            "modulePath": "CopyableLink.tsx"
+          },
+          "cssFilePath": "plasmic/minimalist_about_me_page/PlasmicCopyableLink.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "DC8PSSvysdd",
+          "name": "Switch",
+          "type": "managed",
+          "projectId": "oJPbG6dAnddYXsmAzBHhSC",
+          "renderModuleFilePath": "plasmic/minimalist_about_me_page/PlasmicSwitch.tsx",
+          "importSpec": {
+            "modulePath": "Switch.tsx"
+          },
+          "cssFilePath": "plasmic/minimalist_about_me_page/PlasmicSwitch.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "switch"
+        }
+      ],
+      "icons": [
+        {
+          "id": "5OIhz-Qd9Sldi",
+          "name": "IconIcon",
+          "moduleFilePath": "plasmic/minimalist_about_me_page/icons/PlasmicIcon__Icon.tsx"
+        },
+        {
+          "id": "FjOzVd8WoPpG_",
+          "name": "Icon2Icon",
+          "moduleFilePath": "plasmic/minimalist_about_me_page/icons/PlasmicIcon__Icon2.tsx"
+        },
+        {
+          "id": "JCAQvJp6WRGon",
+          "name": "Icon3Icon",
+          "moduleFilePath": "plasmic/minimalist_about_me_page/icons/PlasmicIcon__Icon3.tsx"
+        },
+        {
+          "id": "Q2AYx03TCWo",
+          "name": "Icon14Icon",
+          "moduleFilePath": "plasmic/minimalist_about_me_page/icons/PlasmicIcon__Icon14.tsx"
+        }
+      ],
+      "images": [
+        {
+          "id": "7KH3yieSf",
+          "name": "2024208.jpg",
+          "filePath": "../public/plasmic/minimalist_about_me_page/images/_2024208Jpg.jpeg"
+        }
+      ],
+      "indirect": false,
+      "globalContextsFilePath": "plasmic/minimalist_about_me_page/PlasmicGlobalContextsProvider.tsx",
+      "codeComponents": [
+        {
+          "id": "88a9wHFLaz",
+          "name": "PlasmicHead",
+          "componentImportPath": "@plasmicapp/react-web"
+        },
+        {
+          "id": "JQ4dJBvwPt",
+          "name": "Fetcher",
+          "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ]
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "ieEJs1AWW8CNM",
+        "name": "Screen",
+        "projectId": "oJPbG6dAnddYXsmAzBHhSC",
+        "contextFilePath": "plasmic/minimalist_about_me_page/PlasmicGlobalVariant__Screen.tsx"
+      }
+    ]
+  },
+  "wrapPagesWithGlobalContexts": true,
+  "nextjsConfig": {
+    "pagesDir": "../pages"
+  },
+  "cliVersion": "0.1.193",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.193/dist/plasmic.schema.json"
+}
