@@ -306,7 +306,7 @@ function PlasmicHomepage__RenderFunc(props: {
               displayMinHeight={"0" as const}
               displayMinWidth={"0" as const}
               displayWidth={"100%" as const}
-              loading={"lazy" as const}
+              loading={"eager" as const}
               src={{
                 src: "/plasmic/minimalist_about_me_page/images/_2024208Jpg.jpeg",
                 fullWidth: 2560,
