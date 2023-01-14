@@ -185,7 +185,7 @@
   max-width: 100%;
   object-fit: cover;
   position: relative;
-  width: 201px;
+  width: 199px;
 }
 .text__bct7 {
   position: relative;
@@ -209,7 +209,7 @@
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 17px;
-  border: 1px dotted #ff0000;
+  border: 1px dashed #ff0000;
 }
 @media (min-width: 0px) and (max-width: 800px) {
   .freeBox__l9KXl {

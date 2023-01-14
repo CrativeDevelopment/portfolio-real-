@@ -168,7 +168,16 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.text__fvvXo
                     )}
                   >
-                    {"Lucas Ly"}
+                    <React.Fragment>
+                      <React.Fragment>{"Luc"}</React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#FFFFFF" }}
+                      >
+                        {"as"}
+                      </span>
+                      <React.Fragment>{" Ly"}</React.Fragment>
+                    </React.Fragment>
                   </div>
 
                   <Reveal
@@ -306,7 +315,7 @@ function PlasmicHomepage__RenderFunc(props: {
               displayMinHeight={"0" as const}
               displayMinWidth={"0" as const}
               displayWidth={"100%" as const}
-              loading={"eager" as const}
+              loading={"lazy" as const}
               src={{
                 src: "/plasmic/minimalist_about_me_page/images/_2024208Jpg.jpeg",
                 fullWidth: 2560,
