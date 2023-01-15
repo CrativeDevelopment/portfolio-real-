@@ -1085,3 +1085,14 @@
   flex-shrink: 0;
   padding: 0px;
 }
+.text__urTYp {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  text-align: center;
+  color: #def5ef;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  min-width: 0;
+}

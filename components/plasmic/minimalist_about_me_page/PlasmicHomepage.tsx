@@ -805,6 +805,16 @@ function PlasmicHomepage__RenderFunc(props: {
           </div>
 
           <div className={classNames(projectcss.all, sty.freeBox__jKoZw)} />
+
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__urTYp
+            )}
+          >
+            {"2023"}
+          </div>
         </div>
       </div>
     </React.Fragment>

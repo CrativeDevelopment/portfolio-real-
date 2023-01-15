@@ -195,7 +195,7 @@
     {
       "projectId": "oJPbG6dAnddYXsmAzBHhSC",
       "projectApiToken": "rVuEKWDBooW2BGAvwCBKN8EUEWex9R7UL6F6wjXVEVZNzv560xM94bTZFKU0gelP0W1ExrOfz5O32TakxWaSA",
-      "projectName": "Minimalist about-me page",
+      "projectName": "portfolio",
       "version": "latest",
       "cssFilePath": "plasmic/minimalist_about_me_page/plasmic_minimalist_about_me_page.module.css",
       "components": [
@@ -341,7 +341,8 @@
           "name": "Slider",
           "componentImportPath": "react-slick"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     }
   ],
   "globalVariants": {
