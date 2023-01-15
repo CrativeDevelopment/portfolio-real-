@@ -441,23 +441,6 @@ function PlasmicHomepage__RenderFunc(props: {
                       <div
                         className={classNames(
                           projectcss.all,
-                          sty.freeBox__lAu90
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__gg45J
-                          )}
-                        >
-                          {"Simple"}
-                        </div>
-                      </div>
-
-                      <div
-                        className={classNames(
-                          projectcss.all,
                           sty.freeBox__p1Jga
                         )}
                       >
@@ -501,23 +484,6 @@ function PlasmicHomepage__RenderFunc(props: {
                           </div>
                         </div>
                       ) : null}
-
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__hQmJ
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text___7MoTf
-                          )}
-                        >
-                          {"Blazing fast"}
-                        </div>
-                      </div>
 
                       <div
                         className={classNames(
@@ -569,23 +535,6 @@ function PlasmicHomepage__RenderFunc(props: {
                       <div
                         className={classNames(
                           projectcss.all,
-                          sty.freeBox__nSfFx
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__nlTf
-                          )}
-                        >
-                          {"Collaborative"}
-                        </div>
-                      </div>
-
-                      <div
-                        className={classNames(
-                          projectcss.all,
                           sty.freeBox___0M3Q
                         )}
                       >
@@ -633,23 +582,6 @@ function PlasmicHomepage__RenderFunc(props: {
                       <div
                         className={classNames(
                           projectcss.all,
-                          sty.freeBox__xaVcQ
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text___4B2Bl
-                          )}
-                        >
-                          {"Powerful"}
-                        </div>
-                      </div>
-
-                      <div
-                        className={classNames(
-                          projectcss.all,
                           sty.freeBox__usYr
                         )}
                       >
@@ -693,23 +625,6 @@ function PlasmicHomepage__RenderFunc(props: {
                           </div>
                         </div>
                       ) : null}
-
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__zlpkp
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__axZzb
-                          )}
-                        >
-                          {"Enterprise-ready"}
-                        </div>
-                      </div>
 
                       <div
                         className={classNames(
