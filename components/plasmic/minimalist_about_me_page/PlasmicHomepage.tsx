@@ -166,6 +166,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 <div className={classNames(projectcss.all, sty.freeBox__kJeYz)}>
                   <Reveal
                     className={classNames("__wab_instance", sty.reveal__ccztA)}
+                    damping={0.8 as const}
                     triggerOnce={true}
                   >
                     <div
@@ -253,6 +254,7 @@ function PlasmicHomepage__RenderFunc(props: {
 
               <Reveal
                 className={classNames("__wab_instance", sty.reveal__paJcz)}
+                damping={0.8 as const}
                 triggerOnce={true}
               >
                 <div className={classNames(projectcss.all, sty.freeBox__l9KXl)}>
