@@ -164,24 +164,31 @@ function PlasmicHomepage__RenderFunc(props: {
             >
               <div className={classNames(projectcss.all, sty.freeBox__v788)}>
                 <div className={classNames(projectcss.all, sty.freeBox__kJeYz)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__fvvXo
-                    )}
+                  <Reveal
+                    className={classNames("__wab_instance", sty.reveal__ccztA)}
+                    triggerOnce={true}
                   >
-                    <React.Fragment>
-                      <React.Fragment>{"Luc"}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {"as"}
-                      </span>
-                      <React.Fragment>{" Ly"}</React.Fragment>
-                    </React.Fragment>
-                  </div>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__fvvXo
+                      )}
+                    >
+                      <React.Fragment>
+                        <React.Fragment>{"Luc"}</React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ color: "#FFFFFF" }}
+                        >
+                          {"as"}
+                        </span>
+                        <React.Fragment>{" Ly"}</React.Fragment>
+                      </React.Fragment>
+                    </div>
+                  </Reveal>
 
                   <Reveal
                     className={classNames("__wab_instance", sty.reveal__isrc)}
@@ -244,101 +251,123 @@ function PlasmicHomepage__RenderFunc(props: {
                 </div>
               </div>
 
-              <div className={classNames(projectcss.all, sty.freeBox__l9KXl)}>
-                <div className={classNames(projectcss.all, sty.freeBox__ukrbe)}>
-                  <CopyableLink
-                    data-plasmic-name={"copyableLink"}
-                    data-plasmic-override={overrides.copyableLink}
-                    className={classNames("__wab_instance", sty.copyableLink)}
+              <Reveal
+                className={classNames("__wab_instance", sty.reveal__paJcz)}
+                triggerOnce={true}
+              >
+                <div className={classNames(projectcss.all, sty.freeBox__l9KXl)}>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__ukrbe)}
                   >
-                    {"lucas@crative.net"}
-                  </CopyableLink>
-                </div>
+                    <CopyableLink
+                      data-plasmic-name={"copyableLink"}
+                      data-plasmic-override={overrides.copyableLink}
+                      className={classNames("__wab_instance", sty.copyableLink)}
+                    >
+                      {"lucas@crative.net"}
+                    </CopyableLink>
+                  </div>
 
-                <p.Stack
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__vIFyk)}
-                >
                   <p.Stack
                     as={"div"}
                     hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__kSnuL)}
+                    className={classNames(projectcss.all, sty.freeBox__vIFyk)}
                   >
-                    <p.PlasmicLink
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        sty.link__rDvWt
-                      )}
-                      component={Link}
-                      href={"https://twitter.com/LucasLyLee" as const}
-                      platform={"nextjs"}
-                      target={"_blank" as const}
+                    <p.Stack
+                      as={"div"}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.freeBox__kSnuL)}
                     >
-                      <IconIcon
-                        className={classNames(projectcss.all, sty.svg__qyIk)}
-                        role={"img"}
-                      />
-                    </p.PlasmicLink>
+                      <p.PlasmicLink
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          sty.link__rDvWt
+                        )}
+                        component={Link}
+                        href={"https://twitter.com/LucasLyLee" as const}
+                        platform={"nextjs"}
+                        target={"_blank" as const}
+                      >
+                        <IconIcon
+                          className={classNames(projectcss.all, sty.svg__qyIk)}
+                          role={"img"}
+                        />
+                      </p.PlasmicLink>
 
-                    <p.PlasmicLink
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        sty.link__jeWgh
-                      )}
-                      component={Link}
-                      href={"https://github.com/LucasLy" as const}
-                      platform={"nextjs"}
-                      target={"_blank" as const}
-                    >
-                      <Icon3Icon
-                        className={classNames(projectcss.all, sty.svg__anWku)}
-                        role={"img"}
-                      />
-                    </p.PlasmicLink>
+                      <p.PlasmicLink
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          sty.link__jeWgh
+                        )}
+                        component={Link}
+                        href={"https://github.com/LucasLy" as const}
+                        platform={"nextjs"}
+                        target={"_blank" as const}
+                      >
+                        <Icon3Icon
+                          className={classNames(projectcss.all, sty.svg__anWku)}
+                          role={"img"}
+                        />
+                      </p.PlasmicLink>
+                    </p.Stack>
                   </p.Stack>
-                </p.Stack>
-              </div>
+                </div>
+              </Reveal>
             </p.Stack>
 
             <div className={classNames(projectcss.all, sty.freeBox__qEbx2)} />
           </div>
 
           <Tilt className={classNames("__wab_instance", sty.tilt__l44D)}>
-            <p.PlasmicImg
-              data-plasmic-name={"img"}
-              data-plasmic-override={overrides.img}
-              alt={""}
-              className={classNames(sty.img)}
-              displayHeight={"65px" as const}
-              displayMaxHeight={"none" as const}
-              displayMaxWidth={"100%" as const}
-              displayMinHeight={"0" as const}
-              displayMinWidth={"0" as const}
-              displayWidth={"100%" as const}
-              loading={"lazy" as const}
-              src={{
-                src: "/plasmic/minimalist_about_me_page/images/_2024208Jpg.jpeg",
-                fullWidth: 2560,
-                fullHeight: 1600,
-                aspectRatio: undefined
-              }}
-            />
+            <Reveal
+              className={classNames("__wab_instance", sty.reveal__waLaV)}
+              triggerOnce={true}
+            >
+              <p.PlasmicImg
+                data-plasmic-name={"img"}
+                data-plasmic-override={overrides.img}
+                alt={""}
+                className={classNames(sty.img)}
+                displayHeight={"65px" as const}
+                displayMaxHeight={"none" as const}
+                displayMaxWidth={"100%" as const}
+                displayMinHeight={"0" as const}
+                displayMinWidth={"0" as const}
+                displayWidth={"100%" as const}
+                loading={"lazy" as const}
+                src={{
+                  src: "/plasmic/minimalist_about_me_page/images/_2024208Jpg.jpeg",
+                  fullWidth: 2560,
+                  fullHeight: 1600,
+                  aspectRatio: undefined
+                }}
+              />
+            </Reveal>
           </Tilt>
 
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__x16Oc
-            )}
+          <Reveal
+            className={classNames("__wab_instance", sty.reveal___7YvLx)}
+            triggerOnce={true}
           >
-            {"Lucas Ly - work in progress"}
-          </div>
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__x16Oc
+              )}
+            >
+              {"Lucas Ly - work in progress"}
+            </div>
+          </Reveal>
 
-          <div className={classNames(projectcss.all, sty.freeBox__ehCq4)} />
+          <Reveal
+            className={classNames("__wab_instance", sty.reveal__fk8DK)}
+            triggerOnce={true}
+          >
+            <div className={classNames(projectcss.all, sty.freeBox__ehCq4)} />
+          </Reveal>
 
           <div
             data-plasmic-name={"columns"}

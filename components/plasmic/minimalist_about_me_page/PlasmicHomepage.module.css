@@ -114,6 +114,11 @@
     align-self: center;
   }
 }
+.reveal__ccztA:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
 .text__fvvXo {
   font-size: 70px;
   font-weight: 700;
@@ -218,8 +223,18 @@
     font-size: 18px;
   }
 }
+.reveal__paJcz:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+@media (min-width: 0px) and (max-width: 800px) {
+  .reveal__paJcz:global(.__wab_instance) {
+    align-self: center;
+  }
+}
 .freeBox__l9KXl {
-  width: 40%;
+  width: 100%;
   height: auto;
   display: flex;
   position: relative;
@@ -229,6 +244,7 @@
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 17px;
+  min-width: 0;
   border: 1px dashed #ff0000;
 }
 @media (min-width: 0px) and (max-width: 800px) {
@@ -237,7 +253,10 @@
     top: auto;
     align-items: center;
     padding-left: 30px;
-    width: 63.37%;
+    width: 100%;
+    align-self: center;
+    margin-left: 0px;
+    min-width: 0;
     border-color: #000000;
   }
 }
@@ -397,6 +416,11 @@
   width: 1273px;
   margin-top: 103px;
 }
+.reveal__waLaV:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
 .img {
   position: relative;
   object-fit: cover;
@@ -421,6 +445,11 @@
   object-fit: cover;
   object-position: center center;
 }
+.reveal___7YvLx:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
 .text__x16Oc {
   position: relative;
   width: 100%;
@@ -432,6 +461,11 @@
   font-family: "Homemade Apple";
   min-width: 0;
 }
+.reveal__fk8DK:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
 .freeBox__ehCq4 {
   display: block;
   position: relative;
@@ -440,7 +474,6 @@
   max-width: 100%;
   background: linear-gradient(0deg, #ffffff 0%, #000000 100%);
   margin-top: 53px;
-  flex-shrink: 0;
   padding: 1px;
 }
 .columns {
