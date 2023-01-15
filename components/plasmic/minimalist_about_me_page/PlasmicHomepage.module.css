@@ -517,6 +517,11 @@
   min-width: 0;
   padding: 8px;
 }
+.scrollParallax__uNnOj:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
 .h1___1YipE {
   position: relative;
   width: 100%;
@@ -526,6 +531,11 @@
   text-align: center;
   font-size: 65px;
   min-width: 0;
+}
+.scrollParallax__saxLc:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
 }
 .text__wR37 {
   position: relative;
@@ -539,6 +549,11 @@
   font-family: "Inter", sans-serif;
   min-width: 0;
 }
+.scrollParallax__zo1Jc:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
 .freeBox__k6V6Q {
   display: block;
   position: relative;
@@ -547,7 +562,6 @@
   max-width: 100%;
   margin-top: 61px;
   background: linear-gradient(90deg, #ce9fff00 0%, #ffffff 51%, #56b9ff00 100%);
-  flex-shrink: 0;
   padding: 0px;
 }
 .text__tsVwA {
@@ -579,6 +593,11 @@
   position: relative;
   min-width: 0;
   padding: 8px;
+}
+.scrollParallax___4KNR:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
 }
 .freeBox__mY1M {
   flex-direction: row;
@@ -612,6 +631,11 @@
     padding-bottom: 0px;
   }
 }
+.tilt__aTnG7:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
 .freeBox__dHSi4 {
   flex-direction: column;
   display: flex;
@@ -619,7 +643,6 @@
   height: auto;
   max-width: 100%;
   position: relative;
-  flex-shrink: 0;
   padding: 8px;
 }
 .freeBox__dHSi4 > :global(.__wab_flex-container) {
@@ -695,6 +718,11 @@
   text-decoration-line: none;
   text-overflow: clip;
 }
+.tilt___1CQdP:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
 .freeBox__uaSiv {
   flex-direction: column;
   display: flex;
@@ -702,7 +730,6 @@
   height: auto;
   max-width: 100%;
   position: relative;
-  flex-shrink: 0;
   padding: 8px;
 }
 .freeBox__uaSiv > :global(.__wab_flex-container) {
@@ -778,6 +805,11 @@
   text-decoration-line: none;
   text-overflow: clip;
 }
+.tilt__bp7O:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
 .freeBox__lYznt {
   flex-direction: column;
   display: flex;
@@ -785,7 +817,6 @@
   height: auto;
   max-width: 100%;
   position: relative;
-  flex-shrink: 0;
   padding: 8px;
 }
 .freeBox__lYznt > :global(.__wab_flex-container) {
@@ -861,6 +892,11 @@
   text-decoration-line: none;
   text-overflow: clip;
 }
+.tilt__jGpIx:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
 .freeBox__n9Abr {
   flex-direction: column;
   display: flex;
@@ -868,7 +904,6 @@
   height: auto;
   max-width: 100%;
   position: relative;
-  flex-shrink: 0;
   padding: 8px;
 }
 .freeBox__n9Abr > :global(.__wab_flex-container) {
@@ -944,6 +979,11 @@
   text-decoration-line: none;
   text-overflow: clip;
 }
+.tilt__j1Rzq:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
 .freeBox__umMXy {
   flex-direction: column;
   display: flex;
@@ -951,7 +991,6 @@
   height: auto;
   max-width: 100%;
   position: relative;
-  flex-shrink: 0;
   padding: 8px;
 }
 .freeBox__umMXy > :global(.__wab_flex-container) {

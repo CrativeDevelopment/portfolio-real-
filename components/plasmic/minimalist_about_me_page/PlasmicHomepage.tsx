@@ -37,6 +37,7 @@ import {
 import { Reveal } from "@plasmicpkgs/react-awesome-reveal"; // plasmic-import: R6s1FdhksG/codeComponent
 import Tilt from "@plasmicpkgs/react-parallax-tilt"; // plasmic-import: PfY466VIuq/codeComponent
 import CopyableLink from "../../CopyableLink"; // plasmic-import: CmYzwBVy-6EQR/component
+import { ParallaxWrapper } from "@plasmicpkgs/react-scroll-parallax"; // plasmic-import: bozP4lLlAZ/codeComponent
 
 import { useScreenVariants as useScreenVariantsieEJs1Aww8Cnm } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: ieEJs1AWW8CNM/globalVariant
 
@@ -381,30 +382,56 @@ function PlasmicHomepage__RenderFunc(props: {
               data-plasmic-override={overrides.column}
               className={classNames(projectcss.all, sty.column)}
             >
-              <h1
+              <ParallaxWrapper
                 className={classNames(
-                  projectcss.all,
-                  projectcss.h1,
-                  projectcss.__wab_text,
-                  sty.h1___1YipE
+                  "__wab_instance",
+                  sty.scrollParallax__uNnOj
                 )}
+                speed={20 as const}
               >
-                {"#!!?S# Who are you!?"}
-              </h1>
+                <h1
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h1,
+                    projectcss.__wab_text,
+                    sty.h1___1YipE
+                  )}
+                >
+                  {"#!!?S# Who are you!?"}
+                </h1>
+              </ParallaxWrapper>
 
-              <div
+              <ParallaxWrapper
                 className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__wR37
+                  "__wab_instance",
+                  sty.scrollParallax__saxLc
                 )}
+                speed={20 as const}
               >
-                {
-                  "Hello, I'm Lucas Ly. I am a 13-year-old student from Sweden who builds websites, web applications, and web prototypes to develop my innovation.\n I construct websites in the hopes of setting a new benchmark. how to create websites today. A novel approach to understanding the psychology of websites. Welcome to my website."
-                }
-              </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__wR37
+                  )}
+                >
+                  {
+                    "Hello, I'm Lucas Ly. I am a 13-year-old student from Sweden who builds websites, web applications, and web prototypes to develop my innovation.\n I construct websites in the hopes of setting a new benchmark. how to create websites today. A novel approach to understanding the psychology of websites. Welcome to my website."
+                  }
+                </div>
+              </ParallaxWrapper>
 
-              <div className={classNames(projectcss.all, sty.freeBox__k6V6Q)} />
+              <ParallaxWrapper
+                className={classNames(
+                  "__wab_instance",
+                  sty.scrollParallax__zo1Jc
+                )}
+                speed={20 as const}
+              >
+                <div
+                  className={classNames(projectcss.all, sty.freeBox__k6V6Q)}
+                />
+              </ParallaxWrapper>
 
               <div
                 className={classNames(
@@ -435,246 +462,301 @@ function PlasmicHomepage__RenderFunc(props: {
                 <div
                   className={classNames(projectcss.all, sty.freeBox___3JJ5Z)}
                 >
-                  <p.Stack
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__mY1M)}
+                  <ParallaxWrapper
+                    className={classNames(
+                      "__wab_instance",
+                      sty.scrollParallax___4KNR
+                    )}
+                    speed={20 as const}
                   >
                     <p.Stack
                       as={"div"}
                       hasGap={true}
-                      className={classNames(projectcss.all, sty.freeBox__dHSi4)}
+                      className={classNames(projectcss.all, sty.freeBox__mY1M)}
                     >
-                      {true ? (
-                        <div
+                      <Tilt
+                        className={classNames(
+                          "__wab_instance",
+                          sty.tilt__aTnG7
+                        )}
+                      >
+                        <p.Stack
+                          as={"div"}
+                          hasGap={true}
                           className={classNames(
                             projectcss.all,
-                            sty.freeBox__nRu1O
+                            sty.freeBox__dHSi4
                           )}
                         >
+                          {true ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox__nRu1O
+                              )}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.freeBox__fjD0O
+                                )}
+                              >
+                                <Icon14Icon
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.svg__cfGzE
+                                  )}
+                                  role={"img"}
+                                />
+                              </div>
+                            </div>
+                          ) : null}
+
                           <div
                             className={classNames(
                               projectcss.all,
-                              sty.freeBox__fjD0O
+                              sty.freeBox__p1Jga
                             )}
                           >
-                            <Icon14Icon
+                            <div
                               className={classNames(
                                 projectcss.all,
-                                sty.svg__cfGzE
+                                projectcss.__wab_text,
+                                sty.text__dwnFl
                               )}
-                              role={"img"}
-                            />
+                            >
+                              {"Psychology"}
+                            </div>
                           </div>
-                        </div>
-                      ) : null}
+                        </p.Stack>
+                      </Tilt>
 
-                      <div
+                      <Tilt
                         className={classNames(
-                          projectcss.all,
-                          sty.freeBox__p1Jga
+                          "__wab_instance",
+                          sty.tilt___1CQdP
                         )}
                       >
-                        <div
+                        <p.Stack
+                          as={"div"}
+                          hasGap={true}
                           className={classNames(
                             projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__dwnFl
+                            sty.freeBox__uaSiv
                           )}
                         >
-                          {"Psychology"}
-                        </div>
-                      </div>
-                    </p.Stack>
+                          {true ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox__p7Scu
+                              )}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.freeBox__dtXn
+                                )}
+                              >
+                                <Icon14Icon
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.svg__z9Ozj
+                                  )}
+                                  role={"img"}
+                                />
+                              </div>
+                            </div>
+                          ) : null}
 
-                    <p.Stack
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.freeBox__uaSiv)}
-                    >
-                      {true ? (
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__p7Scu
-                          )}
-                        >
                           <div
                             className={classNames(
                               projectcss.all,
-                              sty.freeBox__dtXn
+                              sty.freeBox__amuVf
                             )}
                           >
-                            <Icon14Icon
+                            <div
                               className={classNames(
                                 projectcss.all,
-                                sty.svg__z9Ozj
+                                projectcss.__wab_text,
+                                sty.text___43Riu
                               )}
-                              role={"img"}
-                            />
+                            >
+                              {"Design"}
+                            </div>
                           </div>
-                        </div>
-                      ) : null}
+                        </p.Stack>
+                      </Tilt>
 
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__amuVf
-                        )}
+                      <Tilt
+                        className={classNames("__wab_instance", sty.tilt__bp7O)}
                       >
-                        <div
+                        <p.Stack
+                          as={"div"}
+                          hasGap={true}
                           className={classNames(
                             projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text___43Riu
+                            sty.freeBox__lYznt
                           )}
                         >
-                          {"Design"}
-                        </div>
-                      </div>
-                    </p.Stack>
+                          {true ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox___2ZV07
+                              )}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.freeBox__jhd8E
+                                )}
+                              >
+                                <Icon14Icon
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.svg__aN2Vq
+                                  )}
+                                  role={"img"}
+                                />
+                              </div>
+                            </div>
+                          ) : null}
 
-                    <p.Stack
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.freeBox__lYznt)}
-                    >
-                      {true ? (
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox___2ZV07
-                          )}
-                        >
                           <div
                             className={classNames(
                               projectcss.all,
-                              sty.freeBox__jhd8E
+                              sty.freeBox___0M3Q
                             )}
                           >
-                            <Icon14Icon
+                            <div
                               className={classNames(
                                 projectcss.all,
-                                sty.svg__aN2Vq
+                                projectcss.__wab_text,
+                                sty.text__iqqJf
                               )}
-                              role={"img"}
-                            />
+                            >
+                              {"Functionality"}
+                            </div>
                           </div>
-                        </div>
-                      ) : null}
+                        </p.Stack>
+                      </Tilt>
 
-                      <div
+                      <Tilt
                         className={classNames(
-                          projectcss.all,
-                          sty.freeBox___0M3Q
+                          "__wab_instance",
+                          sty.tilt__jGpIx
                         )}
                       >
-                        <div
+                        <p.Stack
+                          as={"div"}
+                          hasGap={true}
                           className={classNames(
                             projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__iqqJf
+                            sty.freeBox__n9Abr
                           )}
                         >
-                          {"Functionality"}
-                        </div>
-                      </div>
-                    </p.Stack>
+                          {true ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox__owjuJ
+                              )}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.freeBox__vm1Tz
+                                )}
+                              >
+                                <Icon14Icon
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.svg___01R4X
+                                  )}
+                                  role={"img"}
+                                />
+                              </div>
+                            </div>
+                          ) : null}
 
-                    <p.Stack
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.freeBox__n9Abr)}
-                    >
-                      {true ? (
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__owjuJ
-                          )}
-                        >
                           <div
                             className={classNames(
                               projectcss.all,
-                              sty.freeBox__vm1Tz
+                              sty.freeBox__usYr
                             )}
                           >
-                            <Icon14Icon
+                            <div
                               className={classNames(
                                 projectcss.all,
-                                sty.svg___01R4X
+                                projectcss.__wab_text,
+                                sty.text__ou039
                               )}
-                              role={"img"}
-                            />
+                            >
+                              {"Navigation"}
+                            </div>
                           </div>
-                        </div>
-                      ) : null}
+                        </p.Stack>
+                      </Tilt>
 
-                      <div
+                      <Tilt
                         className={classNames(
-                          projectcss.all,
-                          sty.freeBox__usYr
+                          "__wab_instance",
+                          sty.tilt__j1Rzq
                         )}
                       >
-                        <div
+                        <p.Stack
+                          as={"div"}
+                          hasGap={true}
                           className={classNames(
                             projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__ou039
+                            sty.freeBox__umMXy
                           )}
                         >
-                          {"Navigation"}
-                        </div>
-                      </div>
-                    </p.Stack>
+                          {true ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox__tKaO9
+                              )}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.freeBox__ffNw1
+                                )}
+                              >
+                                <Icon14Icon
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.svg___0SvjG
+                                  )}
+                                  role={"img"}
+                                />
+                              </div>
+                            </div>
+                          ) : null}
 
-                    <p.Stack
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.freeBox__umMXy)}
-                    >
-                      {true ? (
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__tKaO9
-                          )}
-                        >
                           <div
                             className={classNames(
                               projectcss.all,
-                              sty.freeBox__ffNw1
+                              sty.freeBox__m0Ufv
                             )}
                           >
-                            <Icon14Icon
+                            <div
                               className={classNames(
                                 projectcss.all,
-                                sty.svg___0SvjG
+                                projectcss.__wab_text,
+                                sty.text__wcZk3
                               )}
-                              role={"img"}
-                            />
+                            >
+                              {"Persuasion"}
+                            </div>
                           </div>
-                        </div>
-                      ) : null}
-
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__m0Ufv
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__wcZk3
-                          )}
-                        >
-                          {"Persuasion"}
-                        </div>
-                      </div>
+                        </p.Stack>
+                      </Tilt>
                     </p.Stack>
-                  </p.Stack>
+                  </ParallaxWrapper>
                 </div>
               ) : null}
             </div>
