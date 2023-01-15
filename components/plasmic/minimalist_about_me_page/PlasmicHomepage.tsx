@@ -47,6 +47,7 @@ import sty from "./PlasmicHomepage.module.css"; // plasmic-import: K9b1BPlQOtEee
 
 import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: 5OIhz-Qd9Sldi/icon
 import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: JCAQvJp6WRGon/icon
+import Icon14Icon from "./icons/PlasmicIcon__Icon14"; // plasmic-import: Q2AYx03TCWo/icon
 
 export type PlasmicHomepage__VariantMembers = {};
 export type PlasmicHomepage__VariantsArgs = {};
@@ -61,6 +62,8 @@ export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
   copyableLink?: p.Flex<typeof CopyableLink>;
   img?: p.Flex<typeof p.PlasmicImg>;
+  columns?: p.Flex<"div">;
+  column?: p.Flex<"div">;
 };
 
 export interface DefaultHomepageProps {}
@@ -334,6 +337,404 @@ function PlasmicHomepage__RenderFunc(props: {
           >
             {"Lucas Ly - work in progress"}
           </div>
+
+          <div className={classNames(projectcss.all, sty.freeBox__ehCq4)} />
+
+          <div
+            data-plasmic-name={"columns"}
+            data-plasmic-override={overrides.columns}
+            className={classNames(projectcss.all, sty.columns)}
+          >
+            <div
+              data-plasmic-name={"column"}
+              data-plasmic-override={overrides.column}
+              className={classNames(projectcss.all, sty.column)}
+            >
+              <h1
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h1,
+                  projectcss.__wab_text,
+                  sty.h1___1YipE
+                )}
+              >
+                {"#!!?S# Who are you!?"}
+              </h1>
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__wR37
+                )}
+              >
+                {
+                  "Hello, I'm Lucas Ly. I am a 13-year-old student from Sweden who builds websites, web applications, and web prototypes to develop my innovation. I construct websites in the hopes of setting a new benchmark. how to create websites today. A novel approach to understanding the psychology of websites. Welcome to my website."
+                }
+              </div>
+
+              <div className={classNames(projectcss.all, sty.freeBox__k6V6Q)} />
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__tsVwA
+                )}
+              >
+                <React.Fragment>
+                  <React.Fragment>{""}</React.Fragment>
+                  {
+                    <h1
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h1,
+                        projectcss.__wab_text,
+                        sty.h1__kxbEb
+                      )}
+                    >
+                      {"What I value as a web designer."}
+                    </h1>
+                  }
+                  <React.Fragment>{""}</React.Fragment>
+                </React.Fragment>
+              </div>
+
+              {true ? (
+                <div
+                  className={classNames(projectcss.all, sty.freeBox___3JJ5Z)}
+                >
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__mY1M)}
+                  >
+                    <p.Stack
+                      as={"div"}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.freeBox__dHSi4)}
+                    >
+                      {true ? (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__nRu1O
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__fjD0O
+                            )}
+                          >
+                            <Icon14Icon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg__cfGzE
+                              )}
+                              role={"img"}
+                            />
+                          </div>
+                        </div>
+                      ) : null}
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__lAu90
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__gg45J
+                          )}
+                        >
+                          {"Simple"}
+                        </div>
+                      </div>
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__p1Jga
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__dwnFl
+                          )}
+                        >
+                          {"Psychology"}
+                        </div>
+                      </div>
+                    </p.Stack>
+
+                    <p.Stack
+                      as={"div"}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.freeBox__uaSiv)}
+                    >
+                      {true ? (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__p7Scu
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__dtXn
+                            )}
+                          >
+                            <Icon14Icon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg__z9Ozj
+                              )}
+                              role={"img"}
+                            />
+                          </div>
+                        </div>
+                      ) : null}
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__hQmJ
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text___7MoTf
+                          )}
+                        >
+                          {"Blazing fast"}
+                        </div>
+                      </div>
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__amuVf
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text___43Riu
+                          )}
+                        >
+                          {"Design"}
+                        </div>
+                      </div>
+                    </p.Stack>
+
+                    <p.Stack
+                      as={"div"}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.freeBox__lYznt)}
+                    >
+                      {true ? (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox___2ZV07
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__jhd8E
+                            )}
+                          >
+                            <Icon14Icon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg__aN2Vq
+                              )}
+                              role={"img"}
+                            />
+                          </div>
+                        </div>
+                      ) : null}
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__nSfFx
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__nlTf
+                          )}
+                        >
+                          {"Collaborative"}
+                        </div>
+                      </div>
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox___0M3Q
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__iqqJf
+                          )}
+                        >
+                          {"Functionality"}
+                        </div>
+                      </div>
+                    </p.Stack>
+
+                    <p.Stack
+                      as={"div"}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.freeBox__n9Abr)}
+                    >
+                      {true ? (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__owjuJ
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__vm1Tz
+                            )}
+                          >
+                            <Icon14Icon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg___01R4X
+                              )}
+                              role={"img"}
+                            />
+                          </div>
+                        </div>
+                      ) : null}
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__xaVcQ
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text___4B2Bl
+                          )}
+                        >
+                          {"Powerful"}
+                        </div>
+                      </div>
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__usYr
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__ou039
+                          )}
+                        >
+                          {"Navigation"}
+                        </div>
+                      </div>
+                    </p.Stack>
+
+                    <p.Stack
+                      as={"div"}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.freeBox__umMXy)}
+                    >
+                      {true ? (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__tKaO9
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__ffNw1
+                            )}
+                          >
+                            <Icon14Icon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg___0SvjG
+                              )}
+                              role={"img"}
+                            />
+                          </div>
+                        </div>
+                      ) : null}
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__zlpkp
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__axZzb
+                          )}
+                        >
+                          {"Enterprise-ready"}
+                        </div>
+                      </div>
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__m0Ufv
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__wcZk3
+                          )}
+                        >
+                          {"Persuasion"}
+                        </div>
+                      </div>
+                    </p.Stack>
+                  </p.Stack>
+                </div>
+              ) : null}
+            </div>
+          </div>
+
+          <div className={classNames(projectcss.all, sty.freeBox__jKoZw)} />
         </div>
       </div>
     </React.Fragment>
@@ -341,9 +742,11 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "copyableLink", "img"],
+  root: ["root", "copyableLink", "img", "columns", "column"],
   copyableLink: ["copyableLink"],
-  img: ["img"]
+  img: ["img"],
+  columns: ["columns", "column"],
+  column: ["column"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -352,6 +755,8 @@ type NodeDefaultElementType = {
   root: "div";
   copyableLink: typeof CopyableLink;
   img: typeof p.PlasmicImg;
+  columns: "div";
+  column: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -417,6 +822,8 @@ export const PlasmicHomepage = Object.assign(
     // Helper components rendering sub-elements
     copyableLink: makeNodeComponent("copyableLink"),
     img: makeNodeComponent("img"),
+    columns: makeNodeComponent("columns"),
+    column: makeNodeComponent("column"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
