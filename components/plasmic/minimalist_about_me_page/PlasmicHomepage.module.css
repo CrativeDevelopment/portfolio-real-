@@ -545,7 +545,7 @@
   width: 800px;
   height: 5px;
   max-width: 100%;
-  margin-top: 30px;
+  margin-top: 61px;
   background: linear-gradient(90deg, #ce9fff00 0%, #ffffff 51%, #56b9ff00 100%);
   flex-shrink: 0;
   padding: 0px;
@@ -566,6 +566,7 @@
   color: #ffffff;
   font-weight: 700;
   font-size: 60px;
+  margin-top: 78px;
 }
 .freeBox___3JJ5Z {
   display: flex;
@@ -1035,6 +1036,7 @@
   background: linear-gradient(0deg, #ff000000 0%, #ff0000 49%, #ffffff 81%);
   align-self: center;
   margin-left: 0px;
+  margin-top: 79px;
   flex-shrink: 0;
   padding: 0px;
 }

@@ -400,7 +400,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 )}
               >
                 {
-                  "Hello, I'm Lucas Ly. I am a 13-year-old student from Sweden who builds websites, web applications, and web prototypes to develop my innovation. I construct websites in the hopes of setting a new benchmark. how to create websites today. A novel approach to understanding the psychology of websites. Welcome to my website."
+                  "Hello, I'm Lucas Ly. I am a 13-year-old student from Sweden who builds websites, web applications, and web prototypes to develop my innovation.\n I construct websites in the hopes of setting a new benchmark. how to create websites today. A novel approach to understanding the psychology of websites. Welcome to my website."
                 }
               </div>
 
