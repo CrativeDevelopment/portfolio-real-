@@ -37,6 +37,7 @@ import {
 import { Reveal } from "@plasmicpkgs/react-awesome-reveal"; // plasmic-import: R6s1FdhksG/codeComponent
 import Tilt from "@plasmicpkgs/react-parallax-tilt"; // plasmic-import: PfY466VIuq/codeComponent
 import CopyableLink from "../../CopyableLink"; // plasmic-import: CmYzwBVy-6EQR/component
+import { FollowWrapper } from "@plasmicpkgs/react-twitter-widgets"; // plasmic-import: zqQBieQcfl/codeComponent
 import { ParallaxWrapper } from "@plasmicpkgs/react-scroll-parallax"; // plasmic-import: bozP4lLlAZ/codeComponent
 
 import { useScreenVariants as useScreenVariantsieEJs1Aww8Cnm } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: ieEJs1AWW8CNM/globalVariant
@@ -62,6 +63,7 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
   copyableLink?: p.Flex<typeof CopyableLink>;
+  follow?: p.Flex<typeof FollowWrapper>;
   img?: p.Flex<typeof p.PlasmicImg>;
   columns?: p.Flex<"div">;
   column?: p.Flex<"div">;
@@ -323,6 +325,14 @@ function PlasmicHomepage__RenderFunc(props: {
             <div className={classNames(projectcss.all, sty.freeBox__qEbx2)} />
           </div>
 
+          <FollowWrapper
+            data-plasmic-name={"follow"}
+            data-plasmic-override={overrides.follow}
+            className={classNames("__wab_instance", sty.follow)}
+            large={false}
+            username={"LucasLyLee" as const}
+          />
+
           <Tilt className={classNames("__wab_instance", sty.tilt__l44D)}>
             <Reveal
               className={classNames("__wab_instance", sty.reveal__waLaV)}
@@ -415,9 +425,41 @@ function PlasmicHomepage__RenderFunc(props: {
                     sty.text__wR37
                   )}
                 >
-                  {
-                    "Hello, I'm Lucas Ly. I am a 13-year-old student from Sweden who builds websites, web applications, and web prototypes to develop my innovation.\n I construct websites in the hopes of setting a new benchmark. how to create websites today. A novel approach to understanding the psychology of websites. Welcome to my website."
-                  }
+                  <React.Fragment>
+                    <React.Fragment>
+                      {"Hello, I'm Lucas Ly. I am a 13-year-old student from "}
+                    </React.Fragment>
+                    {
+                      <p.PlasmicLink
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          projectcss.__wab_text,
+                          projectcss.plasmic_default__inline,
+                          sty.link__vVb2
+                        )}
+                        component={Link}
+                        href={"https://goo.gl/maps/9Pmy4Df2WHUBcjEh7" as const}
+                        platform={"nextjs"}
+                      >
+                        <React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#A700FF" }}
+                          >
+                            {"Sweden"}
+                          </span>
+                        </React.Fragment>
+                      </p.PlasmicLink>
+                    }
+                    <React.Fragment>
+                      {
+                        " who builds websites, web applications, and web prototypes to develop my innovation.\n I construct websites in the hopes of setting a new benchmark. how to create websites today. A novel approach to understanding the psychology of websites. Welcome to my website."
+                      }
+                    </React.Fragment>
+                  </React.Fragment>
                 </div>
               </ParallaxWrapper>
 
@@ -770,8 +812,9 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "copyableLink", "img", "columns", "column"],
+  root: ["root", "copyableLink", "follow", "img", "columns", "column"],
   copyableLink: ["copyableLink"],
+  follow: ["follow"],
   img: ["img"],
   columns: ["columns", "column"],
   column: ["column"]
@@ -782,6 +825,7 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   copyableLink: typeof CopyableLink;
+  follow: typeof FollowWrapper;
   img: typeof p.PlasmicImg;
   columns: "div";
   column: "div";
@@ -849,6 +893,7 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     copyableLink: makeNodeComponent("copyableLink"),
+    follow: makeNodeComponent("follow"),
     img: makeNodeComponent("img"),
     columns: makeNodeComponent("columns"),
     column: makeNodeComponent("column"),
