@@ -53,8 +53,7 @@
           "name": "DataProvider",
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "58GpZjZCWTaJ8AUhpCwt2K",
@@ -73,8 +72,7 @@
           "name": "Reveal",
           "componentImportPath": "@plasmicpkgs/react-awesome-reveal"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "84wxoth5npGrp6RRXPL88z",
@@ -98,8 +96,7 @@
           "name": "ParallaxProviderWrapper",
           "componentImportPath": "@plasmicpkgs/react-scroll-parallax"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "gLnoj82AzKVVT7qXiqAbHD",
@@ -159,8 +156,7 @@
           "name": "TabContent",
           "componentImportPath": "@plasmicpkgs/plasmic-tabs"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "itBdcjth19Wasd6ngAYxWR",
@@ -189,8 +185,7 @@
           "name": "FollowWrapper",
           "componentImportPath": "@plasmicpkgs/react-twitter-widgets"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "oJPbG6dAnddYXsmAzBHhSC",
@@ -238,6 +233,33 @@
           "scheme": "blackbox",
           "componentType": "component",
           "plumeType": "switch"
+        },
+        {
+          "id": "8zu6vrMj23k",
+          "name": "Button",
+          "type": "managed",
+          "projectId": "oJPbG6dAnddYXsmAzBHhSC",
+          "renderModuleFilePath": "plasmic/portfolio/PlasmicButton.tsx",
+          "importSpec": {
+            "modulePath": "Button.tsx"
+          },
+          "cssFilePath": "plasmic/portfolio/PlasmicButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
+        },
+        {
+          "id": "n2ugMPDFZR",
+          "name": "NewPage",
+          "type": "managed",
+          "projectId": "oJPbG6dAnddYXsmAzBHhSC",
+          "renderModuleFilePath": "plasmic/portfolio/PlasmicNewPage.tsx",
+          "importSpec": {
+            "modulePath": "../pages/new-page.tsx"
+          },
+          "cssFilePath": "plasmic/portfolio/PlasmicNewPage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -260,6 +282,16 @@
           "id": "Q2AYx03TCWo",
           "name": "Icon14Icon",
           "moduleFilePath": "plasmic/minimalist_about_me_page/icons/PlasmicIcon__Icon14.tsx"
+        },
+        {
+          "id": "6cGBE7yn7YN",
+          "name": "ChecksvgIcon",
+          "moduleFilePath": "plasmic/portfolio/icons/PlasmicIcon__Checksvg.tsx"
+        },
+        {
+          "id": "w-BOWcKuYgL",
+          "name": "Icon4Icon",
+          "moduleFilePath": "plasmic/portfolio/icons/PlasmicIcon__Icon4.tsx"
         }
       ],
       "images": [
@@ -267,6 +299,11 @@
           "id": "7KH3yieSf",
           "name": "2024208.jpg",
           "filePath": "../public/plasmic/minimalist_about_me_page/images/_2024208Jpg.jpeg"
+        },
+        {
+          "id": "_zWaqaFCe",
+          "name": "image.png",
+          "filePath": "../public/plasmic/portfolio/images/imagepng.png"
         }
       ],
       "indirect": false,
@@ -301,8 +338,7 @@
           "name": "Tilt",
           "componentImportPath": "@plasmicpkgs/react-parallax-tilt"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "5dGW8Awro3qq8Hh5MveXLP",
@@ -321,8 +357,7 @@
           "name": "LottieWrapper",
           "componentImportPath": "@plasmicpkgs/lottie-react"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "r3ASNrnyvLLLAtDvzUioQ",
@@ -341,8 +376,7 @@
           "name": "Slider",
           "componentImportPath": "react-slick"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     }
   ],
   "globalVariants": {
@@ -359,6 +393,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.194",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.194/dist/plasmic.schema.json"
+  "cliVersion": "0.1.218",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.218/dist/plasmic.schema.json"
 }

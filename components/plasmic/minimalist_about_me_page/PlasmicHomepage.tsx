@@ -14,6 +14,7 @@ import * as React from "react";
 
 import Head from "next/head";
 import Link, { LinkProps } from "next/link";
+import { useRouter } from "next/router";
 
 import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/host";
@@ -39,6 +40,7 @@ import Tilt from "@plasmicpkgs/react-parallax-tilt"; // plasmic-import: PfY466VI
 import CopyableLink from "../../CopyableLink"; // plasmic-import: CmYzwBVy-6EQR/component
 import { FollowWrapper } from "@plasmicpkgs/react-twitter-widgets"; // plasmic-import: zqQBieQcfl/codeComponent
 import { ParallaxWrapper } from "@plasmicpkgs/react-scroll-parallax"; // plasmic-import: bozP4lLlAZ/codeComponent
+import Button from "../../Button"; // plasmic-import: 8zu6vrMj23k/component
 
 import { useScreenVariants as useScreenVariantsieEJs1Aww8Cnm } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: ieEJs1AWW8CNM/globalVariant
 
@@ -50,6 +52,8 @@ import sty from "./PlasmicHomepage.module.css"; // plasmic-import: K9b1BPlQOtEee
 import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: 5OIhz-Qd9Sldi/icon
 import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: JCAQvJp6WRGon/icon
 import Icon14Icon from "./icons/PlasmicIcon__Icon14"; // plasmic-import: Q2AYx03TCWo/icon
+import ChecksvgIcon from "../portfolio/icons/PlasmicIcon__Checksvg"; // plasmic-import: 6cGBE7yn7YN/icon
+import Icon4Icon from "../portfolio/icons/PlasmicIcon__Icon4"; // plasmic-import: w-BOWcKuYgL/icon
 
 export type PlasmicHomepage__VariantMembers = {};
 export type PlasmicHomepage__VariantsArgs = {};
@@ -64,9 +68,8 @@ export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
   copyableLink?: p.Flex<typeof CopyableLink>;
   follow?: p.Flex<typeof FollowWrapper>;
-  img?: p.Flex<typeof p.PlasmicImg>;
-  columns?: p.Flex<"div">;
-  column?: p.Flex<"div">;
+  background2?: p.Flex<"div">;
+  copy?: p.Flex<"div">;
 };
 
 export interface DefaultHomepageProps {}
@@ -76,8 +79,15 @@ const __wrapUserFunction =
 const __wrapUserPromise =
   globalThis.__PlasmicWrapUserPromise ??
   (async (loc, promise) => {
-    await promise;
+    return await promise;
   });
+
+function useNextRouter() {
+  try {
+    return useRouter();
+  } catch {}
+  return undefined;
+}
 
 function PlasmicHomepage__RenderFunc(props: {
   variants: PlasmicHomepage__VariantsArgs;
@@ -87,6 +97,7 @@ function PlasmicHomepage__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
+  const __nextRouter = useNextRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
@@ -95,9 +106,10 @@ function PlasmicHomepage__RenderFunc(props: {
     ...args,
     ...variants
   };
+  const refsRef = React.useRef({});
+  const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
-
   const [$queries, setDollarQueries] = React.useState({});
 
   const globalVariants = ensureGlobalVariants({
@@ -273,6 +285,14 @@ function PlasmicHomepage__RenderFunc(props: {
                     </CopyableLink>
                   </div>
 
+                  <FollowWrapper
+                    data-plasmic-name={"follow"}
+                    data-plasmic-override={overrides.follow}
+                    className={classNames("__wab_instance", sty.follow)}
+                    large={false}
+                    username={"LucasLyLee" as const}
+                  />
+
                   <p.Stack
                     as={"div"}
                     hasGap={true}
@@ -325,24 +345,14 @@ function PlasmicHomepage__RenderFunc(props: {
             <div className={classNames(projectcss.all, sty.freeBox__qEbx2)} />
           </div>
 
-          <FollowWrapper
-            data-plasmic-name={"follow"}
-            data-plasmic-override={overrides.follow}
-            className={classNames("__wab_instance", sty.follow)}
-            large={false}
-            username={"LucasLyLee" as const}
-          />
-
           <Tilt className={classNames("__wab_instance", sty.tilt__l44D)}>
             <Reveal
               className={classNames("__wab_instance", sty.reveal__waLaV)}
               triggerOnce={true}
             >
               <p.PlasmicImg
-                data-plasmic-name={"img"}
-                data-plasmic-override={overrides.img}
                 alt={""}
-                className={classNames(sty.img)}
+                className={classNames(sty.img___4QrDf)}
                 displayHeight={"65px" as const}
                 displayMaxHeight={"none" as const}
                 displayMaxWidth={"100%" as const}
@@ -360,20 +370,33 @@ function PlasmicHomepage__RenderFunc(props: {
             </Reveal>
           </Tilt>
 
-          <Reveal
-            className={classNames("__wab_instance", sty.reveal___7YvLx)}
-            triggerOnce={true}
+          <p.PlasmicLink
+            className={classNames(
+              projectcss.all,
+              projectcss.a,
+              sty.link__nmr27
+            )}
+            component={Link}
+            href={"https://lucas-terminal.vercel.app/" as const}
+            platform={"nextjs"}
+            target={"_blank" as const}
           >
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__x16Oc
-              )}
+            <Reveal
+              className={classNames("__wab_instance", sty.reveal___7YvLx)}
+              triggerOnce={true}
             >
-              {"Lucas Ly - work in progress"}
-            </div>
-          </Reveal>
+              <button
+                className={classNames(
+                  projectcss.all,
+                  projectcss.button,
+                  projectcss.__wab_text,
+                  sty.button__ck65Q
+                )}
+              >
+                {"Click Me"}
+              </button>
+            </Reveal>
+          </p.PlasmicLink>
 
           <Reveal
             className={classNames("__wab_instance", sty.reveal__fk8DK)}
@@ -382,16 +405,8 @@ function PlasmicHomepage__RenderFunc(props: {
             <div className={classNames(projectcss.all, sty.freeBox__ehCq4)} />
           </Reveal>
 
-          <div
-            data-plasmic-name={"columns"}
-            data-plasmic-override={overrides.columns}
-            className={classNames(projectcss.all, sty.columns)}
-          >
-            <div
-              data-plasmic-name={"column"}
-              data-plasmic-override={overrides.column}
-              className={classNames(projectcss.all, sty.column)}
-            >
+          <div className={classNames(projectcss.all, sty.columns__jxj7B)}>
+            <div className={classNames(projectcss.all, sty.column__rg1Rt)}>
               <ParallaxWrapper
                 className={classNames(
                   "__wab_instance",
@@ -801,6 +816,176 @@ function PlasmicHomepage__RenderFunc(props: {
                   </ParallaxWrapper>
                 </div>
               ) : null}
+
+              <ParallaxWrapper
+                className={classNames(
+                  "__wab_instance",
+                  sty.scrollParallax__zCb4
+                )}
+                speed={20 as const}
+              >
+                <div
+                  className={classNames(projectcss.all, sty.freeBox___371Bp)}
+                />
+              </ParallaxWrapper>
+
+              <h1
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h1,
+                  projectcss.__wab_text,
+                  sty.h1__uEjft
+                )}
+              >
+                {"My work"}
+              </h1>
+
+              <div className={classNames(projectcss.all, sty.freeBox__khz7R)}>
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__g7XtX)}
+                >
+                  <div
+                    className={classNames(projectcss.all, sty.columns__jOnYv)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.column__lrNdV)}
+                    >
+                      <p.PlasmicImg
+                        alt={""}
+                        className={classNames(sty.img__eOnao)}
+                        displayHeight={"100%" as const}
+                        displayMaxHeight={"none" as const}
+                        displayMaxWidth={"none" as const}
+                        displayMinHeight={"320px" as const}
+                        displayMinWidth={"0" as const}
+                        displayWidth={"100%" as const}
+                        src={{
+                          src: "/plasmic/portfolio/images/imagepng.png",
+                          fullWidth: 2560,
+                          fullHeight: 1357,
+                          aspectRatio: undefined
+                        }}
+                      />
+
+                      <div
+                        data-plasmic-name={"background2"}
+                        data-plasmic-override={overrides.background2}
+                        className={classNames(projectcss.all, sty.background2)}
+                      />
+                    </div>
+
+                    <div
+                      className={classNames(projectcss.all, sty.column__t8Cd)}
+                    >
+                      <p.Stack
+                        as={"div"}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__xqyZa
+                        )}
+                      >
+                        <p.Stack
+                          as={"div"}
+                          data-plasmic-name={"copy"}
+                          data-plasmic-override={overrides.copy}
+                          hasGap={true}
+                          className={classNames(projectcss.all, sty.copy)}
+                        >
+                          <p.Stack
+                            as={"div"}
+                            hasGap={true}
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__iew9
+                            )}
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__bleAp
+                              )}
+                            >
+                              {"2023"}
+                            </div>
+
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__bH5P8
+                              )}
+                            >
+                              {"Crative.net"}
+                            </div>
+
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__aZny8
+                              )}
+                            >
+                              {
+                                "Lucas Ly with help from Elliot and trende2001 founded Crative in 2023 as a network for developers to share their work.\nCrative serves as an intermediary to demonstrate a developer's employment to a recruiter because it may be utilized as a developer recruiting solution.\nCurrently, one of the newest networks for developers created for hiring and exhibiting is called Crative."
+                              }
+                            </div>
+                          </p.Stack>
+
+                          <p.Stack
+                            as={"div"}
+                            hasGap={true}
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__eiNv
+                            )}
+                          >
+                            <Button
+                              className={classNames(
+                                "__wab_instance",
+                                sty.button___1Ynl7
+                              )}
+                              color={"blue" as const}
+                              endIcon={
+                                <Icon4Icon
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.svg___0Wj6H
+                                  )}
+                                  role={"img"}
+                                />
+                              }
+                              link={"https://crative.net" as const}
+                              startIcon={
+                                <ChecksvgIcon
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.svg__x1XgJ
+                                  )}
+                                  role={"img"}
+                                />
+                              }
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text___8M8Ut
+                                )}
+                              >
+                                {"Visit ->"}
+                              </div>
+                            </Button>
+                          </p.Stack>
+                        </p.Stack>
+                      </p.Stack>
+                    </div>
+                  </div>
+                </p.Stack>
+              </div>
             </div>
           </div>
 
@@ -822,12 +1007,11 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "copyableLink", "follow", "img", "columns", "column"],
+  root: ["root", "copyableLink", "follow", "background2", "copy"],
   copyableLink: ["copyableLink"],
   follow: ["follow"],
-  img: ["img"],
-  columns: ["columns", "column"],
-  column: ["column"]
+  background2: ["background2"],
+  copy: ["copy"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -836,9 +1020,8 @@ type NodeDefaultElementType = {
   root: "div";
   copyableLink: typeof CopyableLink;
   follow: typeof FollowWrapper;
-  img: typeof p.PlasmicImg;
-  columns: "div";
-  column: "div";
+  background2: "div";
+  copy: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -904,9 +1087,8 @@ export const PlasmicHomepage = Object.assign(
     // Helper components rendering sub-elements
     copyableLink: makeNodeComponent("copyableLink"),
     follow: makeNodeComponent("follow"),
-    img: makeNodeComponent("img"),
-    columns: makeNodeComponent("columns"),
-    column: makeNodeComponent("column"),
+    background2: makeNodeComponent("background2"),
+    copy: makeNodeComponent("copy"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

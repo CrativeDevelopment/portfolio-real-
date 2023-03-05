@@ -14,6 +14,7 @@ import * as React from "react";
 
 import Head from "next/head";
 import Link, { LinkProps } from "next/link";
+import { useRouter } from "next/router";
 
 import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/host";
@@ -92,8 +93,15 @@ const __wrapUserFunction =
 const __wrapUserPromise =
   globalThis.__PlasmicWrapUserPromise ??
   (async (loc, promise) => {
-    await promise;
+    return await promise;
   });
+
+function useNextRouter() {
+  try {
+    return useRouter();
+  } catch {}
+  return undefined;
+}
 
 function PlasmicSwitch__RenderFunc(props: {
   variants: PlasmicSwitch__VariantsArgs;
@@ -103,6 +111,7 @@ function PlasmicSwitch__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
+  const __nextRouter = useNextRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
@@ -111,32 +120,41 @@ function PlasmicSwitch__RenderFunc(props: {
     ...args,
     ...variants
   };
+  const refsRef = React.useRef({});
+  const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
-
+  const [$queries, setDollarQueries] = React.useState({});
   const stateSpecs = React.useMemo(
     () => [
       {
         path: "noLabel",
         type: "private",
-        initFunc: ($props, $state, $ctx) => $props.noLabel
+        variableType: "variant",
+        initFunc: true
+          ? ({ $props, $state, $queries, $ctx }) => $props.noLabel
+          : undefined
       },
       {
         path: "isDisabled",
         type: "private",
-        initFunc: ($props, $state, $ctx) => $props.isDisabled
+        variableType: "variant",
+        initFunc: true
+          ? ({ $props, $state, $queries, $ctx }) => $props.isDisabled
+          : undefined
       },
       {
         path: "isChecked",
-        type: "private",
-        initFunc: ($props, $state, $ctx) => $props.isChecked
+        type: "writable",
+        variableType: "text",
+
+        valueProp: "isChecked",
+        onChangeProp: "onChange"
       }
     ],
     [$props, $ctx]
   );
-  const $state = p.useDollarState(stateSpecs, $props, $ctx);
-
-  const [$queries, setDollarQueries] = React.useState({});
+  const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
 
   const [isRootFocusVisibleWithin, triggerRootFocusVisibleWithinProps] =
     useTrigger("useFocusVisibleWithin", {
